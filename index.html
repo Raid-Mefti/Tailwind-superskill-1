@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>My Portfolio</title>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header Section -->
+  <header class="bg-gray-800 text-white p-4 sticky top-0 z-10">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">My Portfolio</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
+          <li><a href="#projects" class="hover:text-yellow-400">Projects</a></li>
+          <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-cover bg-center h-screen flex items-center justify-center" >
+    <div class="absolute z-0 inset-0 opacity-70" style="background-image: url('images/me.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+
+    <div class="z-10 text-center text-emerald-300 bg-black bg-opacity-50 p-10 rounded-lg">
+      <h2 class="text-5xl font-extrabold mb-4 drop-shadow-[2px_2px_2px_rgba(0,0,0,1)]">Hi, I'm Raïd</h2>
+      <p class="text-2xl drop-shadow-[2px_2px_2px_rgba(0,0,0,1)]">A passionate developer and writer.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-16 bg-gray-50">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">My Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="bg-white p-4 shadow rounded-lg">
+          <p class="text-xl font-semibold">HTML</p>
+        </div>
+        <div class="bg-white p-4 shadow rounded-lg">
+          <p class="text-xl font-semibold">CSS</p>
+        </div>
+        <div class="bg-white p-4 shadow rounded-lg">
+          <p class="text-xl font-semibold">JavaScript</p>
+        </div>
+        <div class="bg-white p-4 shadow rounded-lg">
+          <p class="text-xl font-semibold">Tailwind CSS</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold text-center mb-8">My Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white shadow rounded-lg overflow-hidden">
+          <img src="images/discord.jpg" alt="Project 1" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-bold">Discord</h3>
+            <p class="text-gray-600">Yup, I made it.</p>
+          </div>
+        </div>
+        <div class="bg-white shadow rounded-lg overflow-hidden">
+          <img src="images/burj.jpg" alt="Project 2" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-bold">Mia Khalifa</h3>
+            <p class="text-gray-600">It's so big.</p>
+          </div>
+        </div>
+        <div class="bg-white shadow rounded-lg overflow-hidden">
+          <img src="images/book.jpg" alt="Project 3" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-bold">Book</h3>
+            <p class="text-gray-600">My book</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="py-16 bg-gray-50">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Contact Me</h2>
+      <form class="max-w-2xl mx-auto bg-white shadow rounded-lg p-8 space-y-6">
+        <div>
+          <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+          <input type="text" id="name" class="mt-1 block w-full p-2 border border-gray-300 rounded">
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+          <input type="email" id="email" class="mt-1 block w-full p-2 border border-gray-300 rounded">
+        </div>
+        <div>
+          <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+          <textarea id="message" class="mt-1 block w-full p-2 border border-gray-300 rounded" rows="4"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-gray-800 text-white p-2 rounded hover:bg-gray-700">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+      <div class="flex justify-center space-x-4 mt-2">
+        <a href="#" class="hover:text-yellow-400">Twitter</a>
+        <a href="#" class="hover:text-yellow-400">LinkedIn</a>
+        <a href="#" class="hover:text-yellow-400">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
