@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raïd's Blog</title>
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-peach-100 text-teal-900">
+  <!-- Header Section -->
+  <header class="bg-gradient-to-r from-teal-500 to-blue-500 text-white py-4">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <h1 class="text-2xl font-bold">My Blog</h1>
+      <nav class="space-x-6">
+        <a href="#featured" class="hover:underline">Home</a>
+        <a href="#categories" class="hover:underline">Categories</a>
+        <a href="#recent" class="hover:underline">Recent Posts</a>
+        <a href="#subscribe" class="hover:underline">Subscribe</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Featured Posts Section -->
+  <section id="featured" class="py-12 bg-peach-200">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-yellow-600 text-center mb-8">Featured Posts</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-gray-200 shadow-lg rounded-lg overflow-hidden">
+          <img src="images/featured1.jpg" alt="Post Image" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-teal-700 mb-2">Saumon</h3>
+            <p class="text-teal-600">If you want to spend enough money to feed a family just for a mouthful.</p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-gray-200 shadow-lg rounded-lg overflow-hidden">
+          <img src="images/featured2.jpg" alt="Post Image" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-teal-700 mb-2">Omelette au frommage</h3>
+            <p class="text-teal-600">Yes, it's "omelette au frommage", not "ommelette de frommage".</p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-gray-200 shadow-lg rounded-lg overflow-hidden">
+          <img src="images/featured3.jpg" alt="Post Image" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-teal-700 mb-2">Glitch dreamer</h3>
+            <p class="text-teal-600">I have no idea what this is, not gonna lie.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Section -->
+  <section id="categories" class="bg-teal-100 py-12">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-yellow-600 text-center mb-8">Categories</h2>
+      <div class="flex flex-wrap justify-center gap-4">
+        <span class="bg-teal-400 text-white px-4 py-2 rounded-full">Technology</span>
+        <span class="bg-blue-400 text-white px-4 py-2 rounded-full">Health</span>
+        <span class="bg-green-400 text-white px-4 py-2 rounded-full">Lifestyle</span>
+        <span class="bg-purple-400 text-white px-4 py-2 rounded-full">Travel</span>
+        <span class="bg-yellow-400 text-teal-900 px-4 py-2 rounded-full">Business</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent Posts Section -->
+  <section id="recent" class="py-12 bg-peach-200">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-yellow-600 text-center mb-8">Recent Posts</h2>
+      <ul class="space-y-4">
+        <!-- Post 1 -->
+        <li class="bg-gray-100 shadow p-4 rounded-lg flex items-center space-x-4">
+          <img src="images/meat1.jpg" alt="Post 1" class="w-20 h-20 object-cover rounded-lg">
+          <div class="flex-1">
+            <span class="block font-semibold text-teal-800">For our meat lovers</span>
+            <span class="text-teal-500">November 23, 2024</span>
+          </div>
+        </li>
+        <!-- Post 2 -->
+        <li class="bg-gray-100 shadow p-4 rounded-lg flex items-center space-x-4">
+          <img src="images/meat2.jpg" alt="Post 2" class="w-20 h-20 object-cover rounded-lg">
+          <div class="flex-1">
+            <span class="block font-semibold text-teal-800">If you're a meat lover, you'll love this</span>
+            <span class="text-teal-500">November 22, 2024</span>
+          </div>
+        </li>
+        <!-- Post 3 -->
+        <li class="bg-gray-100 shadow p-4 rounded-lg flex items-center space-x-4">
+          <img src="images/meat3.jpg" alt="Post 3" class="w-20 h-20 object-cover rounded-lg">
+          <div class="flex-1">
+            <span class="block font-semibold text-teal-800">Meat.</span>
+            <span class="text-teal-500">November 21, 2024</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- Newsletter Subscription Form -->
+  <section id="subscribe" class="bg-yellow-400 text-teal-900 py-12">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4">Subscribe to Our Newsletter</h2>
+      <form class="flex flex-col md:flex-row items-center justify-center gap-4 mt-6">
+        <input type="email" placeholder="Enter your email" class="w-full md:w-auto px-4 py-2 rounded-md text-teal-900">
+        <button class="bg-teal-500 text-white px-6 py-2 rounded-md font-semibold hover:bg-teal-600">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-teal-700 text-white py-6">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <p>&copy; 2024 Raïd's Blog. All Rights Reserved.</p>
+      <div class="space-x-4">
+        <a href="#" class="hover:text-yellow-400">Facebook</a>
+        <a href="#" class="hover:text-yellow-400">Twitter</a>
+        <a href="#" class="hover:text-yellow-400">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
